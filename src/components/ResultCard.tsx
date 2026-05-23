@@ -180,7 +180,7 @@ export default function ResultCard({ journey, mode, onNavigateToGuide }: ResultC
 
       {/* Recommended Section (Rekomendasi Shalat) */}
       <div className="bg-white dark:bg-slate-900/35 border rounded-2xl overflow-hidden shadow-inner border-slate-100 dark:border-slate-800 w-full">
-        <div className="bg-slate-50 dark:bg-slate-900/80 px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div className="bg-white dark:bg-slate-900/80 px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div className="flex items-center gap-2">
             <ClipboardList className="w-5 h-5 text-emerald-700 dark:text-emerald-400 shrink-0" />
             <h3 className="font-bold text-slate-800 dark:text-slate-200 text-sm leading-tight">Rekomendasi Penjadwalan Shalat (Musafir Planner)</h3>
@@ -204,7 +204,7 @@ export default function ResultCard({ journey, mode, onNavigateToGuide }: ResultC
           {/* Time Suggestion Boxes */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 w-full">
             <div className="p-4 bg-emerald-50/50 dark:bg-emerald-950/10 border border-emerald-100/60 dark:border-emerald-800/40 rounded-xl space-y-1.5 min-w-0">
-              <span className="text-[10px] uppercase font-bold text-emerald-800 dark:text-emerald-400 tracking-wider">Opsi Utama Shalat</span>
+               <span className="text-[10px] uppercase font-bold text-emerald-800 dark:text-emerald-400 tracking-wider">Opsi Utama Shalat</span>
               <p className="font-bold text-emerald-950 dark:text-emerald-200 text-sm leading-snug break-words">{recommendation.timeSuggestion1}</p>
               <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Merapatkan waktu sholat saat kondisi transit perjalanan paling tenang.</p>
             </div>
@@ -216,7 +216,7 @@ export default function ResultCard({ journey, mode, onNavigateToGuide }: ResultC
           </div>
 
           {isAllowedShafii && (
-            <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-4 border border-slate-200/60 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4 mt-2">
+            <div className="bg-white dark:bg-slate-900/50 rounded-xl p-4 border border-slate-200/60 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4 mt-2">
               <div className="space-y-1">
                 <span className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
                   <ClipboardList className="w-4 h-4 text-slate-500 dark:text-slate-400 shrink-0" />

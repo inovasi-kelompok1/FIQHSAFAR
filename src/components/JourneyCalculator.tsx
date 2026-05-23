@@ -163,13 +163,13 @@ export default function JourneyCalculator({
                   }
                 }}
                 placeholder="Ketik kota asal (cth: Surabaya)"
-                className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 text-sm focus:bg-white focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all placeholder-slate-400"
+                className="w-full pl-10 pr-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-800 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all placeholder-slate-400"
               />
             </div>
 
             {showOriginDropdown && (
               <div className="absolute z-30 w-full mt-1 bg-white border border-slate-100 rounded-xl shadow-2xl overflow-hidden max-h-60 overflow-y-auto">
-                <div className="px-3 py-1.5 bg-slate-50 border-b border-slate-100 text-[10px] uppercase font-bold tracking-wider text-slate-400 flex justify-between items-center">
+                <div className="px-3 py-1.5 bg-white border-b border-slate-100 text-[10px] uppercase font-bold tracking-wider text-slate-400 flex justify-between items-center">
                   <span>Rekomendasi Kota ({filteredOrigins.length})</span>
                   <span className="text-[9px] font-normal text-slate-500">Tekan Enter untuk pilih pertama</span>
                 </div>
@@ -208,7 +208,7 @@ export default function JourneyCalculator({
               id="swap-route-button"
               type="button"
               onClick={handleSwap}
-              className="p-3 bg-slate-100 text-slate-600 rounded-full hover:bg-emerald-50 hover:text-emerald-700 hover:scale-105 active:scale-95 transition-all shadow-sm border border-slate-200/60"
+              className="p-3 bg-white text-slate-600 rounded-full hover:bg-emerald-50 hover:text-emerald-700 hover:scale-105 active:scale-95 transition-all shadow-sm border border-slate-200/85"
               title="Tukar Kota"
             >
               <ArrowLeftRight className="w-5 h-5 md:rotate-90" />
@@ -241,13 +241,13 @@ export default function JourneyCalculator({
                   }
                 }}
                 placeholder="Ketik kota tujuan (cth: Yogyakarta)"
-                className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 text-sm focus:bg-white focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all placeholder-slate-400"
+                className="w-full pl-10 pr-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-800 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all placeholder-slate-400"
               />
             </div>
 
             {showDestDropdown && (
               <div className="absolute z-30 w-full mt-1 bg-white border border-slate-100 rounded-xl shadow-2xl overflow-hidden max-h-60 overflow-y-auto">
-                <div className="px-3 py-1.5 bg-slate-50 border-b border-slate-100 text-[10px] uppercase font-bold tracking-wider text-slate-400 flex justify-between items-center">
+                <div className="px-3 py-1.5 bg-white border-b border-slate-100 text-[10px] uppercase font-bold tracking-wider text-slate-400 flex justify-between items-center">
                   <span>Rekomendasi Kota ({filteredDests.length})</span>
                   <span className="text-[9px] font-normal text-slate-500">Tekan Enter untuk pilih pertama</span>
                 </div>
@@ -314,12 +314,12 @@ export default function JourneyCalculator({
                     onClick={() => setMode(item.id as TravelMode)}
                     className={`group flex items-center justify-between p-3.5 rounded-xl border-2 transition-all duration-200 cursor-pointer text-left w-full ${
                       isSelected
-                        ? 'bg-emerald-50/90 border-emerald-600 text-emerald-950 dark:bg-emerald-950/40 dark:border-emerald-500 dark:text-emerald-250 shadow-sm ring-1 ring-emerald-600/20 scale-[1.01]'
-                        : 'bg-white border-slate-250 text-slate-700 dark:bg-slate-900/40 dark:border-slate-800 dark:text-slate-350 hover:bg-slate-50 hover:border-slate-300 dark:hover:bg-slate-800/60 dark:hover:border-slate-700 hover:scale-[1.01] active:scale-[0.99]'
+                        ? 'bg-white border-emerald-600 text-emerald-950 dark:bg-emerald-950/40 dark:border-emerald-500 dark:text-emerald-250 shadow-sm ring-1 ring-emerald-600/20 scale-[1.01]'
+                        : 'bg-white border-slate-200 text-slate-700 dark:bg-slate-900/40 dark:border-slate-800 dark:text-slate-350 hover:bg-white hover:border-slate-300 dark:hover:bg-slate-800/60 dark:hover:border-slate-700 hover:scale-[1.01] active:scale-[0.99]'
                     }`}
                   >
                     <div className="flex items-center gap-3.5 min-w-0 pr-2">
-                      <div className={`p-2.5 rounded-lg shrink-0 transition-colors ${isSelected ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400'}`}>
+                      <div className={`p-2 rounded-lg shrink-0 transition-colors ${isSelected ? 'bg-emerald-600 text-white' : 'bg-white border border-slate-200/70 text-slate-500 dark:bg-slate-800 dark:border-transparent dark:text-slate-400'}`}>
                         <Icon className="w-5.5 h-5.5" />
                       </div>
                       <div className="min-w-0">
@@ -359,7 +359,7 @@ export default function JourneyCalculator({
                 type="time"
                 value={departureTime}
                 onChange={(e) => setDepartureTime(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 text-sm focus:bg-white focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
+                className="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl text-slate-800 text-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
               />
             </div>
             <p className="text-[11px] text-slate-500 mt-2">
@@ -378,7 +378,7 @@ export default function JourneyCalculator({
             className={`w-full py-4 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 ${
               isFormValid
                 ? 'bg-amber-500 hover:bg-amber-600 active:translate-y-0.5 text-emerald-950 font-bold shadow-lg shadow-amber-500/20 hover:shadow-amber-500/30'
-                : 'bg-slate-100 text-slate-400 border border-slate-200 cursor-not-allowed'
+                : 'bg-white text-slate-450 border border-slate-200 cursor-not-allowed opacity-60'
             }`}
           >
             <span>Analisis Perjalanan</span>

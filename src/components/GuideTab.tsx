@@ -91,21 +91,21 @@ export default function GuideTab() {
                   onClick={() => setSelectedNiatId(niat.id)}
                   className={`border rounded-xl p-4 cursor-pointer transition-all ${
                     isSelected
-                      ? 'bg-emerald-50/50 border-emerald-500 dark:bg-emerald-950/20 dark:border-emerald-600 shadow-sm ring-1 ring-emerald-500/30'
-                      : 'bg-white border-slate-200 dark:bg-slate-900/30 dark:border-slate-800 hover:bg-slate-50/70 dark:hover:bg-slate-850/60 hover:border-slate-300 dark:hover:border-slate-700'
+                      ? 'bg-emerald-50 border-emerald-500 dark:bg-emerald-950/30 dark:border-emerald-600 shadow-sm ring-1 ring-emerald-500/30'
+                      : 'bg-white border-slate-200 dark:bg-slate-900/30 dark:border-slate-800 hover:bg-slate-50/70 dark:hover:bg-slate-800/60 hover:border-slate-300 dark:hover:border-slate-700'
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className={`text-sm font-bold ${isSelected ? 'text-emerald-950 dark:text-emerald-300 font-semibold' : 'text-slate-700 dark:text-slate-300'}`}>
+                    <span className={`text-sm font-bold ${isSelected ? 'text-emerald-950 dark:text-emerald-250 font-semibold' : 'text-slate-700 dark:text-slate-350'}`}>
                       {niat.title}
                     </span>
-                    <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-amber-400' : 'bg-slate-200 dark:bg-slate-750'}`}></span>
+                    <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-amber-400' : 'bg-slate-200 dark:bg-slate-700'}`}></span>
                   </div>
 
                   {isSelected && (
                     <div className="mt-4 pt-4 border-t border-emerald-100 dark:border-emerald-800/40 space-y-4 animate-fade-in">
                       {/* Arabic Teks */}
-                      <div className="text-right py-5 bg-white/80 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-lg px-5 shadow-sm relative overflow-hidden">
+                      <div className="text-right py-5 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-lg px-5 shadow-sm relative overflow-hidden">
                         <p className="text-2xl sm:text-3xl font-serif text-slate-900 dark:text-emerald-100 leading-[2.2] tracking-wide font-medium" dir="rtl">
                           {niat.arabic}
                         </p>
@@ -114,7 +114,7 @@ export default function GuideTab() {
                       {/* Transliteration */}
                       <div className="space-y-1">
                         <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider font-mono">Latin Transliterasi:</span>
-                        <p className="text-xs text-emerald-900 dark:text-emerald-300 italic font-semibold leading-relaxed bg-emerald-50/30 dark:bg-emerald-950/40 p-2.5 rounded-lg border border-emerald-500/10 dark:border-emerald-800/30">
+                        <p className="text-xs text-emerald-900 dark:text-emerald-350 italic font-semibold leading-relaxed bg-emerald-50 dark:bg-emerald-950/40 p-2.5 rounded-lg border border-emerald-500/10 dark:border-emerald-800/30">
                           "{niat.latin}"
                         </p>
                       </div>
@@ -122,7 +122,7 @@ export default function GuideTab() {
                       {/* Translation */}
                       <div className="space-y-1">
                         <span className="text-[10px] uppercase font-bold text-slate-400 dark:text-slate-500 tracking-wider font-mono">Terjemah Indonesia:</span>
-                        <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed bg-slate-50 dark:bg-slate-900 p-2.5 rounded-lg border border-slate-100 dark:border-slate-850">
+                        <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed bg-white dark:bg-slate-900 p-2.5 rounded-lg border border-slate-100 dark:border-slate-800">
                           {niat.translation}
                         </p>
                       </div>
@@ -134,11 +134,11 @@ export default function GuideTab() {
           </div>
 
           {/* Educational Insight Callout wrapper */}
-          <div className="p-4 bg-amber-500/5 border border-amber-500/10 rounded-xl flex items-start gap-3">
-            <ShieldAlert className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+          <div className="p-4 bg-amber-500/5 dark:bg-amber-950/25 border border-amber-500/15 dark:border-amber-800/35 rounded-xl flex items-start gap-3">
+            <ShieldAlert className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
             <div className="space-y-1">
-              <h4 className="text-xs font-bold text-amber-950 uppercase tracking-widest">Penting Diingat (Fiqh Shalat)</h4>
-              <p className="text-xs text-slate-600 leading-relaxed">
+              <h4 className="text-xs font-bold text-amber-950 dark:text-amber-300 uppercase tracking-widest">Penting Diingat (Fiqh Shalat)</h4>
+              <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
                 Shalat <strong>Maghrib</strong> tetap harus dikerjakan 3 rakaat dan Shalat <strong>Subuh</strong> tetap wajib dikerjakan 2 rakaat. Keduanya sama sekali TIDAK BISA di-qashar (diringkas jumlah rakaatnya). Adapun Shalat Maghrib hanya diperkenankan digabung (jama') bersama Shalat Isya, sedangkan shalat Subuh tidak boleh di-jama' dengan shalat sebelum atau sesudahnya.
               </p>
             </div>
@@ -148,17 +148,17 @@ export default function GuideTab() {
         {/* Section 2: Step-by-Step guides */}
         <div className="space-y-6">
           <div className="flex items-center gap-2 mb-1">
-            <div className="p-2 bg-emerald-50 text-emerald-800 rounded-lg">
+            <div className="p-2 bg-emerald-50 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-400 rounded-lg">
               <ListChecks className="w-5 h-5" />
             </div>
-            <h3 className="font-bold text-slate-800 text-base">2. Urutan &amp; Tata Cara Pelaksanaan</h3>
+            <h3 className="font-bold text-slate-800 dark:text-slate-250 text-base">2. Urutan &amp; Tata Cara Pelaksanaan</h3>
           </div>
 
-          <p className="text-xs text-slate-500 leading-relaxed">
+          <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
             Ikuti urutan langkah-langkah di bawah ini untuk mempraktikkan shalat {activeGuideType === 'taqdim' ? 'Jama’ Taqdim' : 'Jama’ Ta’khir'} secara runtut dan sah:
           </p>
 
-          <div className="bg-white dark:bg-slate-900/30 border border-slate-200/80 dark:border-slate-805 rounded-2xl p-6 shadow-sm space-y-6">
+          <div className="bg-white dark:bg-slate-900/30 border border-slate-200/80 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-6">
             {currentSteps.map((step, index) => (
               <div key={index} className="flex gap-4 items-start last:mb-0 pb-5 border-b border-slate-100 dark:border-slate-800/60 last:border-0 last:pb-0">
                 <div className="flex items-center justify-center w-7 h-7 bg-emerald-800 text-amber-400 rounded-full font-bold text-xs shadow-md shrink-0">

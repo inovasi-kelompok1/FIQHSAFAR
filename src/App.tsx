@@ -443,7 +443,7 @@ export default function App() {
             </section>
 
             {/* INTERACTIVE SAMPLE SIMULATIONS ON HOMEPAGE */}
-            <section className="bg-slate-200/50 border-y border-slate-300/40 py-10">
+            <section className="bg-white dark:bg-[#0f1b3a] border-y border-slate-200/60 dark:border-slate-800 py-10">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-6">
                 <div className="text-center space-y-1">
                   <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold font-mono">

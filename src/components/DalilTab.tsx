@@ -121,7 +121,7 @@ export default function DalilTab() {
             </div>
 
             {/* Arabic */}
-            <div className="text-right py-3 bg-slate-50/50 rounded-xl px-4 border border-slate-100" dir="rtl">
+            <div className="text-right py-3 bg-white rounded-xl px-4 border border-slate-100" dir="rtl">
               <p className="text-xl font-serif text-slate-900 leading-[2.2] font-medium">
                 {DALIL_QURAN.arabic}
               </p>
@@ -162,7 +162,7 @@ export default function DalilTab() {
                 </span>
 
                 {/* Arabic */}
-                <div className="text-right py-2 bg-slate-50/50 rounded-xl px-4 border border-slate-100" dir="rtl">
+                <div className="text-right py-2 bg-white rounded-xl px-4 border border-slate-100" dir="rtl">
                   <p className="text-lg font-serif text-slate-800 leading-[2.1] font-medium">
                     {hadits.arabic}
                   </p>
@@ -174,7 +174,7 @@ export default function DalilTab() {
                 </p>
 
                 {/* Explanation */}
-                <p className="text-xs text-slate-500 leading-relaxed bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <p className="text-xs text-slate-500 leading-relaxed bg-white p-2.5 rounded-lg border border-slate-100">
                   <strong>Syarah:</strong> {hadits.explanation}
                 </p>
               </div>
@@ -224,7 +224,7 @@ export default function DalilTab() {
               <tbody className="divide-y divide-slate-100 bg-white">
                 {MADHAB_COMPARISON.map((madhab, idx) => (
                   <tr key={idx} className="hover:bg-slate-50/50 transition-colors text-xs text-slate-700">
-                    <td className="py-3.5 px-4 font-bold border-r border-slate-100 bg-slate-50/20 align-top">
+                    <td className="py-3.5 px-4 font-bold border-r border-slate-100 bg-white align-top">
                       {renderMadhabName(madhab.name)}
                     </td>
                     <td className="py-3.5 px-4 border-r border-slate-100 align-top">
