@@ -1,0 +1,6 @@
+{
+  "name": "FiqhSafar",
+  "description": "Kalkulator dan panduan interaktif Shalat Jama' Qashar otomatis sesuai dengan rute perjalanan untuk musafir berdasarkan fiqih multi-mazhab, dilengkapi database 140+ kota di Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
